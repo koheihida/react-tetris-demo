@@ -46,6 +46,14 @@
 
 .cell {
   box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ddd;
+  background-color: white;
+}
+
+.cell.block {
+  background-color: blue;
 }
 
 .row {
