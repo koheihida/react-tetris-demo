@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { GRID_WIDTH, GRID_HEIGHT } from './constants';
 
 function App() {
   return (
@@ -9,6 +10,9 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
+        </p>
+        <p>
+          Grid dimensions: {GRID_WIDTH} x {GRID_HEIGHT}
         </p>
         <a
           className="App-link"
