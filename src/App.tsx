@@ -1,8 +1,6 @@
 import React from 'react';
 import './App.css';
-
-const GRID_WIDTH = 10;
-const GRID_HEIGHT = 20;
+import { GRID_WIDTH, GRID_HEIGHT } from './constants';
 
 const App: React.FC = () => {
   // 10x20のグリッドを作成
@@ -35,17 +33,20 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <h1>React Tetris</h1>
-      <div
-        className="grid"
-        style={{
-          display: 'inline-block',
-          margin: '20px auto',
-          border: '2px solid #000',
-        }}
-      >
-        {createGrid()}
-      </div>
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.tsx</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 };
