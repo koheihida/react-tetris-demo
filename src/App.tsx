@@ -95,14 +95,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <h1>React Tetris</h1>
-      <div
-        className="grid"
-        style={{
-          display: 'inline-block',
-          margin: '20px auto',
-          border: '2px solid #000',
-        }}
-      >
+      <div className="grid-container">
         {renderGrid()}
       </div>
     </div>
